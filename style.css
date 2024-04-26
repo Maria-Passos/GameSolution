@@ -1,0 +1,375 @@
+*{
+     margin: 0;
+     padding: 0; 
+    /* box-sizing: border-box; */ 
+}
+
+.container-grid{
+    width: 80vw;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+html{
+    scroll-behavior: smooth;
+    /* comportamento de rolagem */
+}
+
+header{
+    background-color: #F3D8CE;
+    height: 10px;
+    
+}
+
+header button{
+    display: flex;
+    align-items: center;
+}
+
+header img{
+    height: 190px;
+    width: 380px;
+}
+
+header .container-grid{
+    height:100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.menu {
+    width: 700px;
+    display: flex;
+    justify-content: space-around;
+}
+.menu a{
+    font-size: 25px;
+    font-family: "Genos"; 
+
+    color: #360669 ;
+
+    text-decoration: underline transparent;
+    text-decoration-thickness: 2px;
+
+    transition: text-decoration 500ms ease;
+}
+
+.menu a:hover {
+    color:#360669;
+    text-decoration-color: #360669;
+}
+
+#banner .container-grid{
+    display: flex;
+    justify-content: center;
+}
+
+#banner .container-grid img{
+    width: 1250px;
+    margin: 100px;
+}
+
+
+#sobre {
+    /* serve para centralizar o texto  */
+    height: 600px ;
+    padding: 0px 25% ;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* altura do paragrafo */
+
+}
+
+h1 {
+    font-family: "Genos";
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color:#360669;
+}
+
+
+#sobre p{
+    font-family: "Barlow";
+    font-size: 19px;
+
+    text-align: left;
+
+    line-height: 1.5;
+}
+
+
+/* CLIENTES */
+
+
+h2 {
+    
+    font-family: "Genos";
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color:white;
+    
+}
+
+
+#clientes {
+background-color: #C33A0C;
+margin: 0 auto;
+}
+
+/* Deixar os cards lado a lado    */
+.container-grid {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        padding-bottom: 50px;
+        margin-bottom: 40px;
+    }
+
+
+    /* forma do circulo */
+    .card {
+        
+        height: 200px;
+        width: 200px;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+    
+        background-color: white;
+    
+        border-radius: 500px;
+    
+    }
+
+
+    #depoimentos {
+        /* serve para centralizar o texto  */
+        height: 300px ;
+        padding: 0px 25% ;
+    
+        display: flex;
+        flex-direction: column;
+        gap: 20px; /* altura do paragrafo */
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 200px;
+    }
+    
+    h3 {
+        font-family: "Genos";
+        font-size: 30px;
+        text-transform: uppercase;
+        text-align: center;
+        color:#360669;
+    }
+    
+    
+    #depoimentos p{
+        font-family: "Barlow";
+        font-size: 19px;
+    
+        text-align: left;
+    
+        line-height: 1.5;
+    }
+
+
+    #depoimentos button { 
+        width: 300px;
+        height: 40px;
+        background-color: #E15A1C;
+        
+    
+        border: none;
+        border-radius: 4px;
+    
+        color: white;
+    
+        font-family: "Barlow";
+        font-size: 20px;
+        font-weight: 600;
+    
+        cursor: pointer;
+    
+        transition: background-color 500ms ease;
+    }
+    
+    #depoimentos button:hover {
+        background-color: #C33A0C;
+
+    }
+
+
+
+------------
+
+
+#contato {
+    text-align: center;
+
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+    
+}
+
+h4 {
+    font-family: "Genos";
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    color:#360669;
+
+}
+
+#contato h4 {
+    margin-top: 200px;
+    margin-bottom: 70px;
+}
+
+#contato form {
+
+    width: 50%;
+    margin: 0 auto;
+    padding: 60px 0;
+    /* primeiro vertical depois horizontal */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 80px;
+    background-color: #49088D;
+    color: white;
+    font-family: "Barlow";
+    font-size: 20px;
+
+}
+
+.campo {
+    width: 60%;
+
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-bottom: 50px;
+}
+
+.campo-descricao {
+    width: 60%;
+
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+}
+
+.campo input {
+    height: 40px;
+
+    color: white;
+    background-color: #351868;
+
+    border: none;
+    /* border none remove bordas */
+    border-radius: 4px;
+    /* Redondar borda  */
+
+    outline: none;
+
+    text-indent: 10px;
+}
+
+.campo-descricao textarea {
+    color: white;
+    background-color: #351868;
+
+    border: none;
+    border-radius: 4px;
+
+    padding: 10px;
+    resize: none;
+
+}
+
+.campo label,
+.campo-descricao label {
+
+    margin-bottom: 15px;
+}
+
+.campo input,
+.campo-descricao textarea {
+
+    font-family: "Barlow";
+    font-size: 17px;
+}
+
+.campo input::placeholder,
+.campo-descricao textarea::placeholder {
+    color: #b9b9b9;
+}
+
+.campo input:focus,
+.campo-descricao textarea:focus {
+    outline: 2px solid #E15A1C;
+}
+
+
+#contato form button {
+    height: 40px;
+    width: 60%;
+    background-color: #E15A1C;
+    color: white;
+
+    border: none;
+    border-radius: 4px;
+
+    font-size: 30px;
+    font-family: "Barlow";
+    font-weight: 700;
+    /* /* font-weigth Grossura da letra 700 é bold */
+
+    text-transform: uppercase;
+    /* transformar o texto, uppercase é deixar em maiusculo */
+
+    cursor: pointer;
+    /* cursor é o mouse */
+
+    transition: background-color 500ms;
+}
+
+#contato form button:hover {
+    background-color: #9E2F09;
+}    
+    
+
+
+----------
+
+    .container-grid{
+        width: 80vw;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+   footer {
+
+    margin-top: 150px;
+    background-color: #351868;
+    height: 250px;
+   }

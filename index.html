@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameSolution</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <!-- <se for baixar fonte e aqui> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- <abrir css -->
+</head>
+
+<body>
+    <header>
+        <div class="container-grid">
+            <img src="img/MLogogamificaai.png" alt="Logo da empresa Game Solution">
+            <nav class="menu">
+                <a href="#sobre">Sobre</a>
+                <a href="clientes">Clientes</a>
+                <a href="portfolio">Portfolio</a>
+                <a href="cotacao">Cotação</a>
+                <a href="contato">Contato</a>
+                <!-- atalho para repetir shifit alt tecla pra baixo -->
+            </nav>
+            <!-- Menu em hamburger que só aparece quando diminuimos a tela  -->
+            <button><svg xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                        d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                </svg></button>
+        </div>
+    </header>
+
+
+
+    <section id="banner">
+        <div class="container-grid">
+            <img src="img/banner.png" alt="Banner Game Solution">
+        </div>
+    </section>
+
+
+
+
+    <section id="sobre">
+        <h1> Sobre nossa empresa</h1>
+        <p>Somos uma empresa inovadora especializada em criar soluções de gamificação personalizadas para empresas de
+            todos os portes e setores.</p>
+        <p>Combinando a expertise em inteligência artificial e o conhecimento profundo de design de jogos, nossa equipe
+            multidisciplinar desenvolve estratégias e plataformas interativas para elevar a experiência do usuário e
+            impulsionar resultados excepcionais.</p>
+        <p>Nós acreditamos no poder transformador dos jogos e da tecnologia para engajar equipes, aumentar a
+            produtividade e fomentar a motivação. Através de análises detalhadas e algoritmos avançados, adaptamos cada
+            projeto de gamificação às necessidades específicas de cada cliente, oferecendo desde programas de
+            treinamento interativo até sistemas de recompensa e engajamento de funcionários.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor aspernatur quasi fugit minus inventore
+            accusantium animi enim error laboriosam nesciunt, itaque voluptates doloribus harum eos sapiente sed
+            pariatur repudiandae mollitia.</p>
+
+    </section>
+    
+
+
+    <!-- <section class="container-grid" id="clientes"> -->
+        <section id="clientes">
+        <h2>Clientes</h2>
+        <div class="container-grid">
+
+            <div class="card">
+                    <img src="img/LogoGoodHealthy.png" alt="">
+            </div>
+            <div class="card">
+                    <img src="img/LogoGalesun.png" alt="">
+            </div>
+            <div class="card">
+                    <img src="img/LogoBiomove.png" alt="">
+            </div>
+            <div class="card">
+                    <img src="img/LogoAniMall.png" alt="">
+            </div>
+            
+          
+
+        </div>
+
+    </section>
+
+
+
+<!-- Seção depoimentos dos clientes  -->
+
+    <section id="depoimentos">
+        <h3> Depoimentos</h3>
+        <p>Uma empresa de gamificação que se destaca pela sua abordagem inovadora e criativa na integração de elementos de jogos em diversos setores. A empresa GAME SOLUTION é reconhecida por sua capacidade de criar experiências envolventes e motivadoras para seus clientes, ajudando-os a alcançar seus objetivos de maneira divertida e eficaz.
+        </p>
+        <button>Acesse nossos cases</button>
+    </section>
+
+<!-- seção contato -->
+
+<section id="contato">
+    <h4> O processo está chato? Bora Gameficar! Como podemos te ajudar? </h4>
+
+    <form>
+        <div class="campo">
+            <label for="campo-nome">Nome da empresa: </label>
+
+            <input id="campo-nome" placeholder=" Nome da empresa:" type="text">
+        </div>
+
+        <div class="campo">
+            <label for="campo-email">Em qual e-mail podemos te responder? </label>
+            <input id="campo-email" placeholder="Em qual e-mail podemos te responder?" type="email">
+        </div>
+
+        <div class="campo">
+            <label for="campo-responsavel">Responsável pela cotação: </label>
+            <input id="campo-email" placeholder="Responsável pela cotação:" type="text">
+        </div>
+
+        <div class="campo">
+            <label for="campo-empresa">Seguimento da empresa: </label>
+            <input id="campo-email" placeholder="Seguimento da empresa:" type="text">
+        </div>
+
+
+        <div class="campo-descricao">
+            <label for="campo-texto">Descreva um pouco da sua empresa, e também o problema que está procurando
+                solucionar.</label>
+            <textarea placeholder="Descreva sua empresa e o problema que enfrenta..." id="campo-texto" cols="30"
+                rows="10"></textarea>
+            <!-- texterea é para textos grandes -->
+        </div>
+        <button type="reset">Enviar</button>
+        <!-- reset limpa os campos depois de enviar e o type é para enviar as informações para algum lugar -->
+    </form>
+
+
+</section>
+
+<!-- SECAO FOOTER  -->
+
+
+
+
+
+
+<footer>
+    <div class="container-grid">
+        
+    </div>
+
+</footer>
+
+
+
+</body>
+
+</html>
