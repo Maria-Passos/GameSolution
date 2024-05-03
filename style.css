@@ -1,38 +1,36 @@
-*{
-     margin: 0;
-     padding: 0; 
-    /* box-sizing: border-box; */ 
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
 }
 
-.container-grid{
+.container-grid {
     width: 80vw;
     max-width: 1400px;
     margin: 0 auto;
 }
 
-html{
+html {
     scroll-behavior: smooth;
     /* comportamento de rolagem */
 }
 
-header{
+header {
     background-color: #F3D8CE;
     height: 190px;
-    
+
 }
 
-header button{
-    display: flex;
-    align-items: center;
+header button {
+    display: none;
 }
 
-header img{
-    height: 190px;
-    width: 380px;
+header img {
+    width: 234px;
 }
 
-header .container-grid{
-    height:100%;
+header .container-grid {
+    height: 100%;
 
     display: flex;
     justify-content: space-between;
@@ -46,11 +44,12 @@ header .container-grid{
     display: flex;
     justify-content: space-around;
 }
-.menu a{
-    font-size: 25px;
-    font-family: "Genos"; 
 
-    color: #360669 ;
+.menu a {
+    font-size: 25px;
+    font-family: "Genos";
+
+    color: #360669;
 
     text-decoration: underline transparent;
     text-decoration-thickness: 2px;
@@ -59,29 +58,30 @@ header .container-grid{
 }
 
 .menu a:hover {
-    color:#360669;
+    color: #360669;
     text-decoration-color: #360669;
 }
 
-#banner .container-grid{
+#banner .container-grid {
     display: flex;
     justify-content: center;
 }
 
-#banner .container-grid img{
-    width: 1250px;
+#banner .container-grid img {
+    width: 100%;
     margin: 100px;
 }
 
 
 #sobre {
     /* serve para centralizar o texto  */
-    height: 600px ;
-    padding: 0px 25% ;
+    height: 600px;
+    padding: 0px 25%;
 
     display: flex;
     flex-direction: column;
-    gap: 20px; /* altura do paragrafo */
+    gap: 20px;
+    /* altura do paragrafo */
 
 }
 
@@ -90,11 +90,11 @@ h1 {
     font-size: 30px;
     text-transform: uppercase;
     text-align: center;
-    color:#360669;
+    color: #360669;
 }
 
 
-#sobre p{
+#sobre p {
     font-family: "Barlow";
     font-size: 19px;
 
@@ -108,133 +108,133 @@ h1 {
 
 
 h2 {
-    
+
     font-family: "Genos";
     font-size: 30px;
     text-transform: uppercase;
     text-align: center;
-    color:white;
-    
+    color: white;
+
 }
 
 
 #clientes {
-background-color: #C33A0C;
-margin: 0 auto;
+    background-color: #C33A0C;
+    margin: 0 auto;
+    /* padding-top: 200px;
+(deixa no meio para quando for pelo link) */
 }
 
 /* Deixar os cards lado a lado    */
 .container-grid {
 
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    
-        padding-bottom: 50px;
-        margin-bottom: 40px;
-    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: 50px;
+    margin-bottom: 40px;
+}
 
 
-    /* forma do circulo */
-    .card {
-        
-        height: 200px;
-        width: 200px;
-    
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+/* forma do circulo */
+.card {
 
-    
-        background-color: white;
-    
-        border-radius: 500px;
+    height: 200px;
+    width: 200px;
 
-        cursor: pointer;
-        
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 
+    background-color: white;
 
-    .card img {
-        width: 75%;
-    }
+    border-radius: 500px;
 
-    .logogalesun {
-        width: 60%;
-        height: 70%;
-    }
+    cursor: pointer;
 
-    #depoimentos {
-        /* serve para centralizar o texto  */
-        height: 300px ;
-        padding: 0px 25% ;
-    
-        display: flex;
-        flex-direction: column;
-        gap: 20px; /* altura do paragrafo */
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 200px;
-    }
-    
-    h3 {
-        font-family: "Genos";
-        font-size: 30px;
-        text-transform: uppercase;
-        text-align: center;
-        color:#360669;
-    }
-    
-    
-    #depoimentos p{
-        font-family: "Barlow";
-        font-size: 19px;
-    
-        text-align: left;
-    
-        line-height: 1.5;
-    }
-
-
-    #depoimentos button { 
-        width: 300px;
-        height: 60px;
-        background-color: #E15A1C;
-        
-    
-        border: none;
-        border-radius: 15px;
-    
-        color: white;
-    
-        font-family: "Barlow";
-        font-size: 20px;
-        font-weight: 600;
-    
-        cursor: pointer;
-    
-        transition: background-color 500ms ease;
-    }
-    
-    #depoimentos button:hover {
-        background-color: #C33A0C;
-
-    }
+}
 
 
 
-------------
+.card img {
+    width: 75%;
+}
+
+.logogalesun {
+    width: 60%;
+    height: 70%;
+}
+
+#depoimentos {
+    /* serve para centralizar o texto  */
+    height: 300px;
+    padding: 0px 25%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* altura do paragrafo */
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 200px;
+}
+
+h3 {
+    font-family: "Genos";
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #360669;
+}
 
 
-#contato {
+#depoimentos p {
+    font-family: "Barlow";
+    font-size: 19px;
+
+    text-align: left;
+
+    line-height: 1.5;
+}
+
+
+#depoimentos button {
+    width: 300px;
+    height: 60px;
+    background-color: #E15A1C;
+
+
+    border: none;
+    border-radius: 15px;
+
+    color: white;
+
+    font-family: "Barlow";
+    font-size: 20px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: background-color 500ms ease;
+}
+
+#depoimentos button:hover {
+    background-color: #C33A0C;
+
+}
+
+
+
+------------ #cotacao {
     text-align: center;
 
     padding-bottom: 100px;
     margin-bottom: 100px;
-    
+
 }
 
 h4 {
@@ -242,16 +242,16 @@ h4 {
     font-size: 25px;
     text-transform: uppercase;
     text-align: center;
-    color:#360669;
+    color: #360669;
 
 }
 
-#contato h4 {
+#cotacao h4 {
     margin-top: 200px;
     margin-bottom: 70px;
 }
 
-#contato form {
+#cotacao form {
 
     width: 50%;
     margin: 0 auto;
@@ -342,7 +342,7 @@ h4 {
 }
 
 
-#contato form button {
+#cotacao form button {
     width: 250px;
     height: 60px;
     background-color: #E15A1C;
@@ -365,20 +365,18 @@ h4 {
     transition: background-color 500ms;
 }
 
-#contato form button:hover {
+#cotacao form button:hover {
     background-color: #9E2F09;
-}    
+}
 
 
----------------------------
-
-button:hover {
+--------------------------- button:hover {
     background-color: #B98FE3;
-}    
+}
 
-#whatsaap{
+#whatsaap {
     padding: 40px;
-    display:flex;
+    display: flex;
     justify-content: flex-end;
 }
 
@@ -399,7 +397,7 @@ button:hover {
 
     font-size: 25px;
     font-family: "Genos";
-    
+
     /* /* font-weigth Grossura da letra 700 é bold */
 
 
@@ -410,86 +408,235 @@ button:hover {
 
 }
 
-button img{
+button img {
     width: 45px;
 }
 
 
 button:hover {
     background-color: #B98FE3;
-}    
+}
 
 
 /* footer  */
 
- .container-grid{
-    
-        width: 80vw;
-        max-width: 1400px;
-        margin: 0 auto;
-    }
-    
-    
-   footer {
+.container-grid {
+
+    width: 80vw;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+footer {
     padding: 80px;
     /* margin-top: 150px; */
     background-color: #351868;
     height: 250px;
-   }
-
-   footer {
-    
-    /* serve para centralizar o texto  */
-     height: 300px ;
-    
-
-    /* display: flex; */
-    flex-direction:initial;
-    
 }
 
-footer .container-grid:nth-child(1){
+footer {
+
+    /* serve para centralizar o texto  */
+    height: 300px;
+
+
+    /* display: flex; */
+    flex-direction: initial;
+
+}
+
+footer .container-grid:nth-child(1) {
     border-bottom: 2px solid white;
 }
 
-footer .container-grid:nth-child(2){
+footer .container-grid:nth-child(2) {
     display: flex;
     justify-content: center;
 
 }
 
 
-#escrita{
+#escrita {
     font-family: "Genos";
     font-size: 25px;
     text-align: left;
     color: white;
 
-    line-height: 1.5; }
+    line-height: 1.5;
+}
 
 
-    #icones {
-        width: 240px;
-    
-        display: flex;
-        justify-content: space-between;
+#icones {
+    width: 240px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#icones a {
+    color: white;
+}
+
+#icones a:hover {
+    color: #D160E3;
+}
+
+#final {
+    margin-top: 30px;
+    font-family: "Genos";
+    font-size: 25px;
+
+    text-align: left;
+    align-self: center;
+    color: white;
+    line-height: 1.5;
+}
+
+/* ---- */
+@media screen and (max-width: 1300px) {
+
+    header {
+        position: relative;
     }
-    
-    #icones a {
+
+    header button {
+        /* menu de sanduiche */
+        width: 50px;
+
+        display: unset;
+        /* náo mechido */
+        background: none;
+        border: none;
+
+    }
+
+    header svg {
+        fill: #360669;
+    }
+
+    nav.menu {
+
+        height: 500px;
+        width: 350px;
+
+        padding: 0px 30px;
+
+        flex-direction: column;
+        justify-content: space-around;
+
+        background-color: #E15A1Cbb;
+
+        position: absolute;
+        top: 165px;
+        right: 0px;
+    }
+
+    .menu a{
         color: white;
     }
+    #sobre {
+        padding: 100px 15%;
+    }
+
+
+
+    #depoimentos {
+        padding: 100px 15%
+    }
+
+    #cotacao form {
+        width: 75%;
+    }
+
+}
+
+
+
+@media screen and (max-width: 1080px) {
+
+    header img {
+        width: 350px;
     
-    #icones a:hover {
-        color: #D160E3; }
+    }
+    
+    .container-cards {
+        flex-wrap: wrap;
+    }
 
-    #final{
-        margin-top: 30px;
-         font-family: "Genos";
-        font-size: 25px;
+    .card {
+        height: 200px;
+        width: 200px;
+        /* flex-grow: 300%;
+        flex-shrink: 300%;
+        flex-basis: 50%; */
 
-         text-align: left;
-         align-self: center;
-         color: white;
-        line-height: 1.5; }
+    }
 
-        
+    footer {
+        height: unset;
+        /* unset restaura propriedade da altura o footer deixando ele sem configuracao, o navegador vai reinderizar o que ja foif eito */
+    }
+
+    footer .container-grid {
+        padding: 80px;
+        flex-direction: column;
+    }
+
+    
+    footer p { 
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .redes-sociais {
+        align-items: center;
+    }
+
+
+    /* arrumar card e logo */
+    /* ajuda do professor */
+
+}
+
+@media screen and (max-width: 800px) {
+    .clientes {
+        flex-basis: 45%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #sobre {
+        height: unset;
+        margin-bottom: 20px;
+    }
+
+    #sobre h1 {
+        margin-bottom: 20px;
+    }
+
+    #sobre p {
+        margin-bottom: 30px;
+
+    }
+
+
+    #cotacao {
+        margin-bottom: unset;
+    }
+
+    #depoimentos a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .campo,
+    .campo-descricao,
+    #cotacao form button {
+
+        width: 75%;
+    }
+
+}
