@@ -25,6 +25,10 @@ header button {
     display: none;
 }
 
+header button svg{
+    cursor: pointer;
+}
+
 header img {
     width: 300px;
 }
@@ -106,6 +110,11 @@ h1 {
 
 /* CLIENTES */
 
+.quadrado {
+    width: 100px;
+    height: 200px;
+    background-color: white; /* Altere a cor conforme necessário */
+}
 
 h2 {
 
@@ -229,7 +238,8 @@ h3 {
 
 
 
------------- #cotacao {
+/* ------------  */
+#cotacao {
     text-align: center;
 
     padding-bottom: 100px;
@@ -492,6 +502,15 @@ footer .container-grid:nth-child(2) {
     color: white;
     line-height: 1.5;
 }
+
+.menu-fechado {
+    display: none;
+}
+
+#icone-barras {
+    display: none;
+}
+
 
 /* ---- */
 @media screen and (max-width: 1300px) {
@@ -813,13 +832,104 @@ footer .container-grid:nth-child(2) {
         font-size: 20px;
     }
 
-     #final {
+
+    #escrita p{
+        font-family: "Genos";
+        font-size: 20px;
+        text-align: left;
+        color: white;
+    
+        line-height: 1.5;
+    }
+    
+    
+    #icones {
+        width: 100px;
+    
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #final{
+    margin-top: 5px;
+    font-family: "Genos";
     font-size: 10px;
+}
+
+     #whatsaap {
+        /* padding: 20px; */
+        display: flex;
+        justify-content: flex-end;
                 }
 
     footer {
-        margin-right: 500px;
+    
+        margin-right: 5px;
+    }
+
+footer p {
+    font-family: "Genos";
+        font-size: 20px;
+        text-align: left;
+        color: white;
+        line-height: 1.5;
+    }
+}
+
+
+@media screen and (max-width: 350px) {
+    header img {
+        width: 160px;
+    }
+
+    header svg {
+        width: 40px;
+    }
+
+    .conteudo-banner p {
+        font-size: 20px;
     }
 
 
+    #escrita p{
+        font-family: "Genos";
+        font-size: 15px;
+        text-align: left;
+        color: white;
+    
+        line-height: 1.5;
+    }
+    
+    
+    #icones {
+        width: 100px;
+    
+        display: flex;
+        justify-content: center;
+    }
+
+    #final{
+    margin-top: 5px;
+    font-family: "Genos";
+    font-size: 15px;
+}
+
+     #whatsaap {
+        /* padding: 20px; */
+        display: flex;
+        justify-content: flex-end;
+                }
+
+    footer {
+    
+        margin-right: 5px;
+    }
+
+footer p {
+    font-family: "Genos";
+        font-size: 15px;
+        text-align: left;
+        color: white;
+        line-height: 1.5;
+    }
 }
