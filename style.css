@@ -177,7 +177,56 @@ h2 {
     height: 70%;
 }
 
-#depoimentos {
+/* #depoimentos { */
+    /* serve para centralizar o texto  */
+    /* height: 300px;
+    padding: 0px 25%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px; */
+    /* altura do paragrafo */
+    /* flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 200px;
+} */
+
+h3 {
+    font-family: "Genos";
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #360669;
+}
+
+/* 
+#depoimentos p {
+    font-family: "Barlow";
+    font-size: 19px;
+
+    text-align: left;
+
+    line-height: 1.5;
+} */
+/* ------------------ */
+.primeiro-depoimento {
+    color: #351868;
+   /* serve para centralizar o texto  */
+   height: 300px;
+   padding: 0px 25%;
+
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   /* altura do paragrafo */
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 200px;
+}
+
+.segundo-depoimento {
     /* serve para centralizar o texto  */
     height: 300px;
     padding: 0px 25%;
@@ -192,24 +241,74 @@ h2 {
     margin-top: 200px;
 }
 
-h3 {
-    font-family: "Genos";
-    font-size: 30px;
-    text-transform: uppercase;
-    text-align: center;
-    color: #360669;
+.terceiro-depoimento {
+    /* serve para centralizar o texto  */
+    height: 300px;
+    padding: 0px 25%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* altura do paragrafo */
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 200px;
 }
 
+#botao-voltar, #botao-proximo {
+    width: 30px;
 
-#depoimentos p {
-    font-family: "Barlow";
-    font-size: 19px;
+    background: none;
+    border: none;
 
-    text-align: left;
+    cursor: pointer;
 
-    line-height: 1.5;
+    position: absolute;
 }
 
+#botao-voltar svg, #botao-proximo svg {
+    fill: black;
+}
+
+#botao-voltar {
+    left: 4%;
+}
+
+#botao-proximo {
+    right: 4%;
+}
+
+.botoes {
+    width: 150px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: absolute;
+    bottom: 4%;
+
+    /* Centralizar usando position */
+    /* Adicionar left 50% */
+    /* Usar função calc() para subtrair metade da largura do elemento Ex.: 75px */
+    left: calc(50% - 75px);    
+}
+
+.botoes button {
+    width: 30px;
+
+    display: unset;
+
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.botoes button svg {
+    fill: #ffffff76;
+}
+/* -------------- */
 
 #depoimentos button {
     width: 300px;
@@ -832,6 +931,12 @@ footer .container-grid:nth-child(2) {
         font-size: 20px;
     }
 
+    #escrita .container-grid{
+        width: 80vw;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
 
     #escrita p{
         font-family: "Genos";
@@ -857,15 +962,15 @@ footer .container-grid:nth-child(2) {
 }
 
      #whatsaap {
-        /* padding: 20px; */
+        padding: 20px; 
         display: flex;
         justify-content: flex-end;
                 }
 
-    footer {
+    /* footer {
     
         margin-right: 5px;
-    }
+    } */
 
 footer p {
     font-family: "Genos";
@@ -909,21 +1014,23 @@ footer p {
     }
 
     #final{
-    margin-top: 5px;
+    /* margin-top: 5px; */
     font-family: "Genos";
-    font-size: 15px;
+    font-size: 10px;
 }
 
      #whatsaap {
-        /* padding: 20px; */
+        padding: 10px;
         display: flex;
         justify-content: flex-end;
                 }
 
-    footer {
+    .botaozap
+     
+    /* footer {
     
         margin-right: 5px;
-    }
+    } */
 
 footer p {
     font-family: "Genos";
